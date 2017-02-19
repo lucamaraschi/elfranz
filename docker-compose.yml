@@ -1,0 +1,22 @@
+kafka:
+  image: 'spotify/kafka'
+  ports:
+    - "9092:9092"
+  environment:
+    KAFKA_ADVERTISED_HOST_NAME: localhost
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+elasticsearch:
+  image: elasticsearch
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+kafka-connect:
+  ports:
+    - "3000:3000"
+ui:
+  image: 'landoop/kafka-topics-ui'
+  environment:
+    -
+  ports:
+    - "8000:8000"

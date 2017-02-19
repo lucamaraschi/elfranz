@@ -1,0 +1,23 @@
+{
+  "name": "elfranz",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucamaraschi/elfranz.git"
+  },
+  "author": "Luca Maraschi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucamaraschi/elfranz/issues"
+  },
+  "homepage": "https://github.com/lucamaraschi/elfranz#readme",
+  "dependencies": {
+    "elasticsearch": "^12.1.3",
+    "kafkaesque": "^1.0.1"
+  }
+}
